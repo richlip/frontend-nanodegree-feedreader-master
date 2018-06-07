@@ -31,8 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-
-        it('should have each feed url defined and not to be empty', function () {
+        it('has URL defined and they are not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
@@ -91,7 +90,7 @@ $(function() {
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
-    describe('Initial Entries', function() 
+    describe('Initial Entries', function() {
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
